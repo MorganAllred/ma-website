@@ -1,0 +1,17 @@
+.headerContainer {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h2 {
+    pointer-events: none;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}

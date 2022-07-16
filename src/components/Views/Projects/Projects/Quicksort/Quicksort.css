@@ -1,0 +1,35 @@
+.quicksortContainer {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+.graphContainer {
+    display: flex;
+    height: 225px;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 0;
+}
+
+.sliderContainer {
+    margin-top: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderElement {
+    /* margin-left: 10px; */
+    margin-right: 10px;
+}
+
+.numbers {
+    display: flex;
+    border: 1px solid black;
+    width: 3px;
+    background-color: aqua;
+}
+
