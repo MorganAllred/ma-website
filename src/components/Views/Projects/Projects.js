@@ -24,7 +24,7 @@ const Projects = () => {
             />
                 {navSelection === 'Quicksort' && <Quicksort />}
                 {navSelection === 'Doc Uploader' && <DocUploader />}
-                {navSelection === 'Other' && <OtherProjects />}
+                {navSelection === 'Other Projects' && <OtherProjects />}
 
         </>
     );
