@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './Projects.css';
 import Navbar from '../../Navbar/Navbar';
 import Quicksort from './Projects/Quicksort/Quicksort';
+import OtherProjects from './Projects/Other/OtherProjects';
+import DocUploader from './Projects/DocUploader/DocUploader';
 
 const Projects = () => {
     const [navSelection, updateNavSelection] = useState('Quicksort');
@@ -15,10 +17,15 @@ const Projects = () => {
             <Navbar
                 click={handleNavClick}
                 navOptions = {[
-                    'Quicksort'
+                    'Quicksort',
+                    'Doc Uploader',
+                    'Other Projects'
                 ]}
             />
-            <Quicksort />
+                {navSelection === 'Quicksort' && <Quicksort />}
+                {navSelection === 'Doc Uploader' && <DocUploader />}
+                {navSelection === 'Other' && <OtherProjects />}
+
         </>
     );
 }

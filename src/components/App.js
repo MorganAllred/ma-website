@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from './Navbar/Navbar';
 import Header from './Header/Header';
 import Portal from './Portal/Portal';
+import './App.css';
 
 const App = () => {
   const [navSelection, updateNavSelection] = useState('Home');
@@ -23,8 +24,7 @@ const App = () => {
         navOptions= {[
           'Home', 
           'Projects', 
-          'Game', 
-          'Contact'
+          'Game',
         ]} 
       />
       <Portal option={navSelection}/>
