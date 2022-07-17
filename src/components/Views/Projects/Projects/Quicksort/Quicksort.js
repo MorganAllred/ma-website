@@ -80,33 +80,54 @@ const Quicksort = () => {
     //#endregion Quicksort
 
     return(
-        <div className='quicksortContainer'>
-            <div className='sliderContainer'>
-                <Slider
-                    className="sliderElement"
-                    size="small"
-                    min={1}
-                    defaultValue={50} 
-                    aria-label="Default" 
-                    valueLabelDisplay="auto" 
-                    onChange={handleSliderChange}
-                />
-                <Button variant="contained" onClick={handleSort}>Sort!</Button>
+        <>
+            <div className='quicksortContainer'>
+                <div className='sliderContainer'>
+                    <Slider
+                        className="sliderElement"
+                        size="small"
+                        min={1}
+                        defaultValue={50} 
+                        aria-label="Default" 
+                        valueLabelDisplay="auto" 
+                        onChange={handleSliderChange}
+                    />
+                    <Button variant="contained" onClick={handleSort}>Sort!</Button>
+                </div>
+                <div className='graphContainer'>
+                        {theArray.map(({key, value, active}) => {
+                            return (
+                                <div 
+                                    key={key}
+                                    className='numbers'
+                                    style={active ? { backgroundColor: "pink", height: `${value}px`} : {height: `${value}px`}}
+                                    onClick={handleGraphClick}
+                                >
+                                </div>
+                            )    
+                        })}
+                </div>
             </div>
-            <div className='graphContainer'>
-                    {theArray.map(({key, value, active}) => {
-                        return (
-                            <div 
-                                key={key}
-                                className='numbers'
-                                style={active ? { backgroundColor: "pink", height: `${value}px`} : {height: `${value}px`}}
-                                onClick={handleGraphClick}
-                            >
-                            </div>
-                        )    
-                    })}
+            <div style={{ justifyContent: "center" }}>
+                {theArray.map(({key, value}) => {
+                    return (
+                        <span
+                            key={key}
+                            style={{
+                                overflowWrap: "break-word",
+                                paddingTop: "20px",
+                                fontWeight: "bold",
+                                position: "relative",
+                                top: "10px",
+                                justifyContent: "center",
+                            }}
+                        >
+                            {`${value},`}
+                        </span>
+                    )
+                })}
             </div>
-        </div>
+        </>
     );
 }
 

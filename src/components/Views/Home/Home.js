@@ -35,20 +35,24 @@ const Home = () => {
                     </p>
                 </Grid>
                 <Grid item xs={12}>
+                    {/*spacer*/}
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12}>
+                    {/*spacer*/}
+                </Grid>
+                <Grid item xs={12}>
                     <div className="gridDiv">
                         <PhoneIcon />
                         <span>435-660-9637</span>
                     </div>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12}>
                     <div className="gridDiv">
                         <EmailIcon />
                         <span>morgandallred123@gmail.com</span>
                     </div>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12}>
                     <div className="gridDiv">
                         <LinkedInIcon sx={{ color: "#0A66C2" }}/>
                         <a href="https://www.linkedin.com/in/morgan-allred/" target="#">
@@ -57,7 +61,7 @@ const Home = () => {
                         </a>
                     </div>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12}>
                     <div className="gridDiv">
                         <GitHubIcon />
                         <a href="https://github.com/MorganAllred" target="#">
