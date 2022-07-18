@@ -1,2 +1,2 @@
-# Personal Website built on React and node.js
+# Personal Website built with ReactJS
 
